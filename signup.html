@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Signup - RUBBER DUCK</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li><a href="#">NEW</a></li>
+            <li><a href="#">OUTER</a></li>
+            <li><a href="#">TOP</a></li>
+            <li><a href="#">BOTTOM</a></li>
+            <li><a href="#">SALE</a></li>
+    
+          
+          </ul>
+          <div class="nav-logo">
+            <a href="#"><img src="/img_source/combined_logo.png" alt="Logo"></a>
+          </div>
+    
+    
+    
+          <ul class="nav-list">
+            <div class="navbar">
+              <div class="search-container">
+                <form action="/search">
+                  <input type="text" placeholder="search" name="search">
+                  <button type="submit">Q</button>
+                </form>
+              </div>
+            </div>
+      
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="#">BAG</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <main class="signup-main">
+        <div class="signup-form-container">
+            <h1>회원가입</h1>
+            <form id="signupForm" action="/signup-process" method="post">
+              
+                <div class="form-group">
+                    <input type="text" id="new-username" name="new-username" placeholder="아이디" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="new-password" name="new-password" placeholder="비밀번호" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="new-password" name="new-password" placeholder="비밀번호 확인" required>
+                </div>
+             
+                <div class="form-group">
+                    <button type="submit" class="btn-signup">회원가입</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+          <div class="company-info">
+            <h3>Company information</h3>
+            <p>Corporate Name : Rubber Duck</p>
+            <p>CEO : Pak Seong Eon</p>
+            <p>Address : 3F, 303, Pusan University-ro 33-gil, Geu-mung-gu, Busan</p>
+            <p>Business Registration No:1993-04-07</p>
+          </div>
+          <div class="contact-info">
+            <h3>Contact us</h3>
+            <p>Phone : 010-7609-2933</p>
+            <p>Email : tjddjs909@naver.com</p>
+            <p>Office hours : AM 10:00 ~ PM 18:00</p>
+          </div>
+          <div class="terms-info">
+            <h3>Terms of Use</h3>
+             <p>Terms of Use</p>
+             <p>Privacy Policy</p>
+             <p>Contact us</p>
+          </div>
+        </div>
+      </footer>
+    
+
+    <script src="js/signup.js"></script>
+</body>
+
+</html>
