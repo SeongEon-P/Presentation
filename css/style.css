@@ -90,6 +90,14 @@ body {
 
   
 
+.login-form-container button:hover {
+  background-color: #ffc107;
+}
+
+
+.signup-form-container button:hover {
+  background-color: #ffc107;
+}
 
 
 
@@ -172,12 +180,12 @@ footer {
 }
 
 .btn-login {
-  background-color: #ffc107; /* 로그인 버튼 색상 */
+  background-color: #F3E34B; /* 로그인 버튼 색상 */
   color: white;
 }
 
 .btn-signup {
-  background-color: #ffc107; /* 회원가입 버튼 색상 */
+  background-color: #F3E34B; /* 회원가입 버튼 색상 */
   color: white;
   font-size: 13px;
   text-decoration: none; /* 링크 밑줄 제거 */
