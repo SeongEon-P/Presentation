@@ -7,58 +7,61 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<header>
-    <nav class="navbar">
-      <ul class="nav-list">
-        <li><a href="#">NEW</a></li>
-        <li><a href="#">OUTER</a></li>
-        <li><a href="#">TOP</a></li>
-        <li><a href="#">BOTTOM</a></li>
-        <li><a href="#">SALE</a></li>
-
-      
-      </ul>
-      <div class="nav-logo">
-        <a href="#"><img src="/img_source/combined_logo.png" alt="Logo"></a>
-      </div>
-
-
-
-      <ul class="nav-list">
-        <div class="navbar">
-          <div class="search-container">
-            <form action="/search">
-              <input type="text" placeholder="search" name="search">
-              <button type="submit">Q</button>
-            </form>
-          </div>
-        </div>
-  
-        <li><a href="login.html">LOGIN</a></li>
-        <li><a href="#">BAG</a></li>
-      </ul>
-    </nav>
-  </header>
 
 
 
 <body>
-    <div class="login-wrapper">
-        <form class="login-form" action="login_process.php" method="post">
-            <h2>로그인</h2>
-            <div class="form-group">
-                <label for="username">아이디</label>
-                <input type="text" id="username" name="username" required>
+    <header>
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li><a href="#">NEW</a></li>
+            <li><a href="#">OUTER</a></li>
+            <li><a href="#">TOP</a></li>
+            <li><a href="#">BOTTOM</a></li>
+            <li><a href="#">SALE</a></li>
+    
+          
+          </ul>
+          <div class="nav-logo">
+            <a href="#"><img src="/img_source/combined_logo.png" alt="Logo"></a>
+          </div>
+    
+    
+    
+          <ul class="nav-list">
+            <div class="navbar">
+              <div class="search-container">
+                <form action="/search">
+                  <input type="text" placeholder="search" name="search">
+                  <button type="submit">Q</button>
+                </form>
+              </div>
             </div>
-            <div class="form-group">
-                <label for="password">비밀번호</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary">로그인</button>
-            </div>
-        </form>
-    </div>
+      
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="#">BAG</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+
+      <main class="login-main">
+        <div class="login-form-container">
+            <h1>LOGIN</h1>
+            <form id="loginForm" action="/login-process" method="post">
+                <div class="form-group">
+                    <input type="text" id="username" name="username" placeholder="아이디" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="패스워드" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-login">로그인</button>
+                    <button type="button" class="btn-cancel">회원가입</button>
+                </div>
+            </form>
+        </div>
+    </main>
 
     <footer>
       
